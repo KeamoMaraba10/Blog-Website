@@ -5,6 +5,7 @@ import Header from './components/Header.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import ContactMe from './pages/ContactMe.jsx'
 
+
 function App() {
   return (
     <>
@@ -12,9 +13,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog/:id" element={<Blog />} />
+          <Route path="/blogs/:documentId" element={<Blog />} />
           <Route path='/AboutMe' element={<AboutMe />} />
           <Route path='/HitMeUp' element={<ContactMe />} />
+          
         </Routes>
       </div>
     </>
